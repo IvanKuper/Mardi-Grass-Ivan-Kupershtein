@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav id="navcolor" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid title-1">
+            <a class="navbar-brand myLogo" href="home.html">
+                <img src="./img/general-cjQAi-2021.02.08.08.09.59-logo2021.png" alt="" width="100" height="100"
+                    class="d-inline-block align-text-top"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-4">
+                    <li class="nav-item  ms-3 ">
+                        <a class="nav-link purple fs-2" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item  ms-3 ">
+                        <a class="nav-link green fs-2" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item  ms-3 ">
+                        <a class="nav-link yellow fs-2" href="./media.html">Media</a>
+                    </li>
+                    <li class="nav-item  ms-3 ">
+                        <a class="nav-link white fs-2" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link green  fs-2" href="./contact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link yellow  fs-2" href="./mardiTrivia.html">Trivia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav bar -->
+
+
+    <!-- Contacts -->
+    <div class="container mt-3 justify-content-center">
+        <div class="row">
+            <div class="col-md-5">
+                <h1 class="display-3 section text-center">Contacts</h1>
+                <form novalidate="novalidate">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="firstName" placeholder="First name">
+                        <label for="floatingInput">First Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                        <label for="floatingInput">Last Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" email="">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div>
+                        <textarea class="form-control" name="" id="share" cols="30"
+                            rows="8">Enter your text...</textarea>
+                    </div>
+                    <button class="btn w-100 my-3 black" onclick="sendClick(event)">
+                        Send
+                    </button>
+                </form>
+            </div>
+
+            <!-- map -->
+            <div class="col-md-5">
+                <h1 class="display-3 section text-center">Find us</h1>
+                <div class="col">
+                    <h3>Mayor's office:</h3>
+                    <p class="m-0"><i class="fa-solid fa-location-dot icon"></i> <b>Addres:</b> 1300 Perdido St, 2nd
+                        Floor New Orleans,
+                        LA 70112</p>
+                    <p class="m-0"><i class="fa-solid fa-phone icon"></i> <b>Phone:</b> +1-504-658-4900</p>
+                    <p class="mb-4"><i class="fa-solid fa-envelope icon"></i> <b>Email:</b> <a
+                            href="mailto:Hello@mardigrasneworleans.com">Hello@mardigrasneworleans.com</a></p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.4402729112744!2d-90.03918261439007!3d29.9380122305491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a6515ab3e883%3A0x6ee8a309c10e8ced!2zTWFyZGkgR3JhcyBCbHZkLCBOZXcgT3JsZWFucywgTEEsINeQ16jXpteV16og15TXkdeo15nXqg!5e0!3m2!1siw!2sil!4v1640081820248!5m2!1siw!2sil"
+                        width="370" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer" class="text text-center">
+        <div class="alert alert-secondary mt-4 purple" role="alert">
+            <div class="col">
+                <h3>Follow Us</h3>
+                <span class="social fs-2">
+                    <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </span>
+            </div>
+            <b>
+                <br>
+                All rights reserved © Ivan Kuper</b>
+    </footer>
+    <!-- end footer -->
+    <script src="./contact.js"></script>
+</body>
+
+</html>

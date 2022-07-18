@@ -1,0 +1,107 @@
+/* Colors :
+Purple - #9453A6
+Green - #8CBF3F
+Yellow - #F2CC0F
+White - #F2F2F2
+Black - #0D0D0D 
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@300&display=swap');
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Pattaya', sans-serif;
+    /* font-family: 'Henny Penny', cursive; */
+    color: #0D0D0D;
+
+}
+
+h5 {
+    font-family: 'Henny Penny', cursive;
+    font-size: 50px;
+}
+
+
+#mediagallery img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+.navbar {
+    font-family: 'Henny Penny';
+}
+
+.purple {
+    color: #9453A6 !important;
+}
+
+.green {
+    color: #8CBF3F !important;
+}
+
+.yellow {
+    color: #F2CC0F !important;
+}
+
+.white {
+    color: #F2F2F2 !important;
+}
+
+.black {
+    color: #0D0D0D !important;
+}
+
+.btn {
+    border: 2px solid #0D0D0D;
+    background-color: #8CBF3F;
+}
+
+.myLogo:hover {
+    animation: logo 2s ease-out;
+}
+
+@keyframes logo {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+
+    }
+}
+
+@media (min-width: 576px) {
+    img#homeimg {
+        display: none;
+    }
+}
+
+.card:hover {
+    animation: card 2s ease-out;
+}
+
+@keyframes card {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+
+    }
+}
