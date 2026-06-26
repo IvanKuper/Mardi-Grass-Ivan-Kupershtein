@@ -6,13 +6,10 @@ White - #F2F2F2
 Black - #0D0D0D 
 */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@300&display=swap");
 
 p {
-    font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -20,88 +17,124 @@ h2,
 h3,
 h4,
 h6 {
-    font-family: 'Pattaya', sans-serif;
-    /* font-family: 'Henny Penny', cursive; */
-    color: #0D0D0D;
-
+  font-family: "Pattaya", sans-serif;
+  /* font-family: 'Henny Penny', cursive; */
+  color: #0d0d0d;
 }
 
 h5 {
-    font-family: 'Henny Penny', cursive;
-    font-size: 50px;
+  font-family: "Henny Penny", cursive;
+  font-size: 50px;
 }
-
 
 #mediagallery img {
-    height: 300px;
-    width: 300px;
-    margin: 10px;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
 }
 
-
 .navbar {
-    font-family: 'Henny Penny';
+  font-family: "Henny Penny";
 }
 
 .purple {
-    color: #9453A6 !important;
+  color: #9453a6 !important;
 }
 
 .green {
-    color: #8CBF3F !important;
+  color: #8cbf3f !important;
 }
 
 .yellow {
-    color: #F2CC0F !important;
+  color: #f2cc0f !important;
 }
 
 .white {
-    color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
 }
 
 .black {
-    color: #0D0D0D !important;
+  color: #0d0d0d !important;
 }
 
 .btn {
-    border: 2px solid #0D0D0D;
-    background-color: #8CBF3F;
+  border: 2px solid #0d0d0d;
+  background-color: #8cbf3f;
 }
 
 .myLogo:hover {
-    animation: logo 2s ease-out;
+  animation: logo 2s ease-out;
 }
 
 @keyframes logo {
+  0% {
+    transform: scale(1);
+  }
 
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.4);
-
-    }
+  100% {
+    transform: scale(1.4);
+  }
 }
 
 @media (min-width: 576px) {
-    img#homeimg {
-        display: none;
-    }
+  img#homeimg {
+    display: none;
+  }
 }
 
 .card:hover {
-    animation: card 2s ease-out;
+  animation: card 2s ease-out;
 }
 
 @keyframes card {
+  0% {
+    transform: scale(1);
+  }
 
-    0% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1.1);
+  }
+}
 
-    100% {
-        transform: scale(1.1);
+.eyebrow {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #9453a6;
+  margin-bottom: 0.5rem;
+}
 
-    }
+.section-intro {
+  background: rgba(242, 204, 15, 0.12);
+  border: 1px solid rgba(148, 83, 166, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.highlights {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 25px rgba(13, 13, 13, 0.07);
+}
+
+.highlights ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.btn-outline-dark {
+  border-color: #0d0d0d;
+  color: #0d0d0d;
+  background-color: transparent;
+}
+
+.btn-outline-dark:hover {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+.sponsers .lead {
+  color: #555;
+  margin-top: 0.5rem;
 }
